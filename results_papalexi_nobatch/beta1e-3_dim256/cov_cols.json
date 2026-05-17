@@ -1,0 +1,10 @@
+{
+  "cont_cols": [
+    "n_nonzero",
+    "n_umis",
+    "p_mito"
+  ],
+  "cat_cols": [
+    "phase"
+  ]
+}

@@ -1,0 +1,195 @@
+=== Train: beta=0.1 latent_dim=64 (no bio_rep, no lane) ===
+Device: cpu
+Loading data...
+  20729 cells, 3725 genes, 35 perturbations
+  Filtering 1 cells with unknown perturbation assignment.
+  Extra covariates: 6 dims (3 continuous + 3 categorical OHE)
+Log1p-normalizing expression data...
+  Train: 17635 cells | Val: 3093 cells
+
+Model: 3725 genes | 34 perturbations | latent_dim=64
+  Trainable parameters: 9,054,477
+
+Training for up to 100 epochs (early stop patience=15)...
+
+ Epoch   Train Total   Train Recon    Train KL   Val Total   Val Recon        LR    Time
+------------------------------------------------------------------------------------------
+     1        0.2007        0.1984      0.0228      0.1445      0.1445   1.0e-03    2.5s
+     2        0.1496        0.1490      0.0056      0.1435      0.1435   1.0e-03    2.6s
+     3        0.1465        0.1461      0.0034      0.1441      0.1441   1.0e-03    2.6s
+     4        0.1447        0.1445      0.0020      0.1433      0.1433   1.0e-03    2.6s
+     5        0.1429        0.1428      0.0011      0.1435      0.1435   1.0e-03    2.7s
+     6        0.1408        0.1408      0.0006      0.1433      0.1433   1.0e-03    2.7s
+     7        0.1399        0.1399      0.0003      0.1424      0.1424   1.0e-03    2.7s
+     8        0.1391        0.1390      0.0002      0.1409      0.1409   1.0e-03    2.8s
+     9        0.1381        0.1381      0.0002      0.1392      0.1392   1.0e-03    2.8s
+    10        0.1370        0.1370      0.0001      0.1385      0.1385   1.0e-03    2.7s
+    11        0.1361        0.1361      0.0001      0.1378      0.1377   1.0e-03    2.8s
+    12        0.1357        0.1356      0.0001      0.1376      0.1376   1.0e-03    2.8s
+    13        0.1353        0.1353      0.0001      0.1374      0.1374   1.0e-03    2.8s
+    14        0.1351        0.1350      0.0001      0.1372      0.1372   1.0e-03    2.9s
+    15        0.1348        0.1348      0.0001      0.1368      0.1368   1.0e-03    2.8s
+    16        0.1346        0.1346      0.0001      0.1368      0.1368   1.0e-03    2.8s
+    17        0.1344        0.1344      0.0000      0.1365      0.1365   1.0e-03    2.8s
+    18        0.1344        0.1344      0.0000      0.1364      0.1364   1.0e-03    2.8s
+    19        0.1342        0.1342      0.0000      0.1363      0.1363   1.0e-03    2.9s
+    20        0.1341        0.1341      0.0000      0.1363      0.1363   1.0e-03    2.9s
+    21        0.1339        0.1339      0.0000      0.1361      0.1361   1.0e-03    3.0s
+    22        0.1339        0.1338      0.0000      0.1359      0.1359   1.0e-03    3.0s
+    23        0.1337        0.1337      0.0000      0.1358      0.1358   1.0e-03    2.9s
+    24        0.1337        0.1337      0.0000      0.1356      0.1356   1.0e-03    2.9s
+    25        0.1336        0.1336      0.0000      0.1356      0.1356   1.0e-03    2.9s
+    26        0.1335        0.1335      0.0000      0.1356      0.1356   1.0e-03    2.8s
+    27        0.1334        0.1333      0.0000      0.1354      0.1354   1.0e-03    2.8s
+    28        0.1333        0.1333      0.0000      0.1353      0.1353   1.0e-03    2.9s
+    29        0.1333        0.1333      0.0000      0.1350      0.1350   1.0e-03    2.9s
+    30        0.1332        0.1332      0.0000      0.1353      0.1353   1.0e-03    2.8s
+    31        0.1332        0.1332      0.0000      0.1351      0.1351   1.0e-03    2.8s
+    32        0.1332        0.1332      0.0000      0.1350      0.1350   1.0e-03    2.9s
+    33        0.1331        0.1331      0.0000      0.1350      0.1350   1.0e-03    2.9s
+    34        0.1331        0.1331      0.0000      0.1351      0.1351   1.0e-03    2.9s
+    35        0.1330        0.1330      0.0000      0.1350      0.1350   1.0e-03    2.9s
+    36        0.1329        0.1329      0.0000      0.1349      0.1349   1.0e-03    2.9s
+    37        0.1330        0.1330      0.0000      0.1350      0.1350   1.0e-03    2.9s
+    38        0.1330        0.1330      0.0000      0.1349      0.1349   1.0e-03    2.9s
+    39        0.1329        0.1329      0.0000      0.1348      0.1348   1.0e-03    2.9s
+    40        0.1328        0.1328      0.0000      0.1349      0.1349   1.0e-03    2.9s
+    41        0.1327        0.1327      0.0000      0.1349      0.1349   1.0e-03    2.9s
+    42        0.1328        0.1328      0.0000      0.1350      0.1350   1.0e-03    2.9s
+    43        0.1327        0.1327      0.0000      0.1348      0.1348   1.0e-03    2.8s
+    44        0.1327        0.1327      0.0000      0.1348      0.1348   1.0e-03    2.8s
+    45        0.1326        0.1326      0.0000      0.1347      0.1347   1.0e-03    2.9s
+    46        0.1326        0.1326      0.0000      0.1348      0.1348   1.0e-03    2.9s
+    47        0.1326        0.1326      0.0000      0.1348      0.1348   1.0e-03    2.9s
+    48        0.1326        0.1326      0.0000      0.1348      0.1348   1.0e-03    2.9s
+    49        0.1325        0.1325      0.0000      0.1348      0.1348   1.0e-03    2.9s
+    50        0.1325        0.1325      0.0000      0.1348      0.1348   1.0e-03    2.9s
+    51        0.1323        0.1323      0.0000      0.1347      0.1347   5.0e-04    2.9s
+    52        0.1322        0.1322      0.0000      0.1347      0.1347   5.0e-04    2.9s
+    53        0.1322        0.1322      0.0000      0.1346      0.1346   5.0e-04    2.8s
+    54        0.1322        0.1322      0.0000      0.1346      0.1346   5.0e-04    2.8s
+    55        0.1321        0.1321      0.0000      0.1346      0.1346   5.0e-04    2.8s
+    56        0.1321        0.1321      0.0000      0.1347      0.1347   5.0e-04    2.9s
+    57        0.1322        0.1322      0.0000      0.1347      0.1347   5.0e-04    2.9s
+    58        0.1321        0.1321      0.0000      0.1346      0.1346   5.0e-04    2.9s
+    59        0.1321        0.1321      0.0000      0.1346      0.1346   5.0e-04    2.8s
+    60        0.1320        0.1320      0.0000      0.1346      0.1346   2.5e-04    2.8s
+    61        0.1320        0.1320      0.0000      0.1346      0.1346   2.5e-04    2.8s
+    62        0.1319        0.1319      0.0000      0.1346      0.1346   2.5e-04    2.9s
+    63        0.1319        0.1319      0.0000      0.1346      0.1346   2.5e-04    2.8s
+    64        0.1320        0.1320      0.0000      0.1346      0.1346   2.5e-04    2.8s
+    65        0.1319        0.1319      0.0000      0.1346      0.1346   2.5e-04    2.8s
+    66        0.1318        0.1318      0.0000      0.1346      0.1346   2.5e-04    2.8s
+    67        0.1319        0.1319      0.0000      0.1346      0.1346   2.5e-04    2.8s
+    68        0.1318        0.1318      0.0000      0.1346      0.1346   2.5e-04    2.8s
+    69        0.1319        0.1319      0.0000      0.1346      0.1346   1.3e-04    2.8s
+    70        0.1318        0.1318      0.0000      0.1346      0.1346   1.3e-04    2.8s
+    71        0.1317        0.1317      0.0000      0.1346      0.1346   1.3e-04    2.8s
+    72        0.1318        0.1318      0.0000      0.1346      0.1346   1.3e-04    2.8s
+    73        0.1318        0.1318      0.0000      0.1346      0.1346   1.3e-04    2.8s
+    74        0.1318        0.1318      0.0000      0.1346      0.1346   1.3e-04    2.9s
+    75        0.1317        0.1317      0.0000      0.1346      0.1346   6.3e-05    2.8s
+    76        0.1317        0.1317      0.0000      0.1346      0.1346   6.3e-05    2.8s
+    77        0.1316        0.1316      0.0000      0.1346      0.1346   6.3e-05    2.8s
+    78        0.1317        0.1317      0.0000      0.1346      0.1346   6.3e-05    3.2s
+
+Early stopping at epoch 78 (no improvement for 15 epochs)
+
+Done. Best val loss: 0.1346
+Checkpoints and logs saved to: /project/xuanyao/jiaming/deeplearning/results_papalexi_nobatch/beta0.1_dim64
+=== Analyze ===
+Device: cpu
+Loading data...
+  20729 cells, 3725 genes, 34 perturbations
+Log1p-normalizing...
+  Filtering 1 cells with unknown perturbation.
+
+Loading model from model_best.pt...
+
+[1/4] Computing latent embeddings...
+  Silhouette score (perturbation clusters, excl. NTC): -0.1096
+Running UMAP (this may take a few minutes)...
+UMAP(min_dist=0.3, n_jobs=1, n_neighbors=30, random_state=42, verbose=True)
+Fri May 15 16:55:29 2026 Construct fuzzy simplicial set
+Fri May 15 16:55:29 2026 Finding Nearest Neighbors
+Fri May 15 16:55:29 2026 Building RP forest with 12 trees
+Fri May 15 16:55:35 2026 NN descent for 14 iterations
+	 1  /  14
+	 2  /  14
+	 3  /  14
+	Stopping threshold met -- exiting after 3 iterations
+Fri May 15 16:55:47 2026 Finished Nearest Neighbor Search
+Fri May 15 16:55:51 2026 Construct embedding
+	completed  0  /  200 epochs
+	completed  20  /  200 epochs
+	completed  40  /  200 epochs
+	completed  60  /  200 epochs
+	completed  80  /  200 epochs
+	completed  100  /  200 epochs
+	completed  120  /  200 epochs
+	completed  140  /  200 epochs
+	completed  160  /  200 epochs
+	completed  180  /  200 epochs
+Fri May 15 16:56:10 2026 Finished embedding
+  Saved: /project/xuanyao/jiaming/deeplearning/results_papalexi_nobatch/beta0.1_dim64/figures/umap_latent.png
+  Saved covariate UMAPs: umap_n_nonzero.png, umap_n_umis.png, umap_lane.png, umap_bio_rep.png, umap_phase.png, umap_p_mito.png
+Running expression-PCA UMAP for covariate verification...
+  Saved expression UMAP covariates: umap_expr_n_nonzero.png, umap_expr_n_umis.png, umap_expr_lane.png, umap_expr_bio_rep.png, umap_expr_phase.png, umap_expr_p_mito.png
+  Saved: /project/xuanyao/jiaming/deeplearning/results_papalexi_nobatch/beta0.1_dim64/figures/umap_per_perturbation.png
+
+[2/4] Computing perturbation response scores (decode Δ vs NTC avg of 9 guides: ['NTg1', 'NTg10', 'NTg2', 'NTg3', 'NTg4']...)...
+  NTg1                 (  303 cells) response range: [-0.055, 0.060] [NTC]
+  NTg10                (  235 cells) response range: [-0.107, 0.051] [NTC]
+  NTg2                 (  106 cells) response range: [-0.141, 0.165] [NTC]
+  NTg3                 (  244 cells) response range: [-0.051, 0.046] [NTC]
+  NTg4                 (  431 cells) response range: [-0.094, 0.355] [NTC]
+  NTg5                 (  305 cells) response range: [-0.052, 0.032] [NTC]
+  NTg7                 (  445 cells) response range: [-0.072, 0.049] [NTC]
+  NTg8                 (   56 cells) response range: [-0.193, 0.108] [NTC]
+  NTg9                 (  261 cells) response range: [-0.037, 0.054] [NTC]
+  tar-ATF2             ( 1102 cells) response range: [-0.034, 0.130]
+  tar-BRD4             (  341 cells) response range: [-0.204, 0.094]
+  tar-CAV1             (  882 cells) response range: [-0.012, 0.023]
+  tar-CD86             ( 1197 cells) response range: [-0.038, 0.112]
+  tar-CMTM6            (  817 cells) response range: [-0.054, 0.088]
+  tar-CUL3             (  274 cells) response range: [-0.278, 0.548]
+  tar-ETV7             (  841 cells) response range: [-0.042, 0.160]
+  tar-IFNGR1           ( 1341 cells) response range: [-1.660, 0.545]
+  tar-IFNGR2           ( 1213 cells) response range: [-1.722, 0.569]
+  tar-IRF1             ( 1073 cells) response range: [-0.986, 1.062]
+  tar-IRF7             (  614 cells) response range: [-0.062, 0.180]
+  tar-JAK2             ( 1024 cells) response range: [-1.829, 0.623]
+  tar-MARCH8           ( 1003 cells) response range: [-0.087, 0.118]
+  tar-MYC              (  108 cells) response range: [-0.157, 0.290]
+  tar-NFKBIA           (  787 cells) response range: [-0.141, 0.284]
+  tar-PDCD1LG2         (  617 cells) response range: [-0.031, 0.060]
+  tar-POU2F2           (  662 cells) response range: [-0.103, 0.239]
+  tar-SMAD4            (  659 cells) response range: [-1.141, 0.685]
+  tar-SPI1             (   48 cells) response range: [-0.154, 0.101]
+  tar-STAT1            (  444 cells) response range: [-1.759, 0.646]
+  tar-STAT2            (  661 cells) response range: [-0.804, 0.198]
+  tar-STAT3            (  493 cells) response range: [-0.051, 0.080]
+  tar-STAT5A           (  659 cells) response range: [-0.055, 0.101]
+  tar-TNFRSF14         (  964 cells) response range: [-0.037, 0.053]
+  tar-UBE2L6           (  518 cells) response range: [-0.050, 0.105]
+  NTC null: mean |response| per gene = 0.0048  std across NTC guides = 0.0061
+  Saved: /project/xuanyao/jiaming/deeplearning/results_papalexi_nobatch/beta0.1_dim64/response_scores.csv
+  Saved: /project/xuanyao/jiaming/deeplearning/results_papalexi_nobatch/beta0.1_dim64/figures/gene_response_heatmap.png
+  Saved: /project/xuanyao/jiaming/deeplearning/results_papalexi_nobatch/beta0.1_dim64/figures/effect_size_vs_null.png
+  NTC noise floor (mean+2SD): 0.0093
+  Saved: /project/xuanyao/jiaming/deeplearning/results_papalexi_nobatch/beta0.1_dim64/figures/top_genes_per_pert.png
+
+[3/4] Clustering perturbations by response vectors...
+  Saved: /project/xuanyao/jiaming/deeplearning/results_papalexi_nobatch/beta0.1_dim64/figures/perturbation_clustermap.png
+
+[4/4] Running hallmark pathway enrichment...
+  Saved: /project/xuanyao/jiaming/deeplearning/results_papalexi_nobatch/beta0.1_dim64/figures/pathway_enrichment.png
+
+[Bonus] Comparing CVAE response vs naive differential expression...
+  Mean Spearman ρ (CVAE vs DE): 0.563
+  Mean top-20 gene overlap:     7.9/20
+  Saved: /project/xuanyao/jiaming/deeplearning/results_papalexi_nobatch/beta0.1_dim64/cvae_vs_de_comparison.csv
+
+All figures saved to: /project/xuanyao/jiaming/deeplearning/results_papalexi_nobatch/beta0.1_dim64/figures
+Done!
+Done: beta0.1_dim64
